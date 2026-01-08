@@ -80,7 +80,7 @@ Previously Used Blog Titles:
 """
 
     response = client.models.generate_content(
-        model='gemini-2.5-flash-lite', contents=prompt
+        model='gemini-2.5-flash', contents=prompt
     )
     clean_response =re.sub(r"```[a-zA-Z]*\n?|```", "", response.text).strip()
   
